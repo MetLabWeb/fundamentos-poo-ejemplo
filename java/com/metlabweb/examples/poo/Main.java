@@ -46,20 +46,20 @@ public class Main {
 
         Pokemon pokemonDesconocido = new Pokemon("???", new Estadisticas(5,10)); //variable de tipo Pokemon (clase padre) + objeto de tipo Pokemon
         Volador hoothoot = new Volador("Hoothoot", new Estadisticas(15,20), 100); //variable de tipo Volador (clase hija) + objeto de tipo Volador
-        Pokemon chicorita = new Planta("chicorita", new Estadisticas(13,22), 29.5f); //variable de tipo Pokemon (clase padre) + objeto de tipo Planta (clase hija)
+        Pokemon chikorita = new Planta("Chikorita", new Estadisticas(13,22), 29.5f); //variable de tipo Pokemon (clase padre) + objeto de tipo Planta (clase hija)
 
         System.out.println("\n======= EJEMPLO CON OBJETOS =======");
 
         pokemonDesconocido.saludar();
-        chicorita.saludar();
+        chikorita.saludar();
         hoothoot.saludar();
 
         hoothoot.setAlturaDeVuelo(250);
-        chicorita.getEstadisticas().setAtaque(200);
+        chikorita.getEstadisticas().setAtaque(200);
 
         System.out.println("\n------- cambiamos algunos datos -------");
 
-        chicorita.saludar();
+        chikorita.saludar();
         hoothoot.saludar();
 
     }
